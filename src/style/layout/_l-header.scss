@@ -1,0 +1,15 @@
+$component-name: 'l-header';
+
+
+
+//interpolação de string com scss
+.#{$component-name} {
+    background-color: var(--color-header);
+    grid-area: header;
+    height: 4.37rem;
+    grid-template-columns: $global-max-width;
+    justify-content: center;
+    @include breakpoint(large-up) {
+        display: grid;
+    }
+}

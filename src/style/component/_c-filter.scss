@@ -1,0 +1,27 @@
+$component-name: "c-filter";
+
+
+.#{$component-name} {
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        margin-bottom: 0.62rem;
+    }
+
+    &__legend {
+        border-bottom: 0.06rem solid var(--color-gray);
+        margin-bottom: 0.32rem;
+        display: inline-block;
+        padding-bottom: 0.31rem;
+        width: 100%;
+    }
+    &__item {
+        //retira a margin somente do ultimo item
+        &:not(:last-child) {
+            margin-bottom: 0.62rem;
+        }
+    }
+}

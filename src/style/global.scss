@@ -1,0 +1,85 @@
+
+
+  // ========================
+  // style geral
+  // ========================
+ 
+ 
+
+  // settings
+
+  @import "./01-settings/breakpoint";
+  @import "./01-settings/color";
+  @import "./01-settings/sizing";
+  @import "./01-settings/transition";
+  @import "./01-settings/typography";
+  @import "./01-settings/breakpoint";
+
+   // tools
+
+   @import "./02-tools/color";
+   @import "./02-tools/v";
+   @import "./02-tools/z-index";
+
+   // generics
+  
+   @import "./03-generics/a11y";
+   @import "./03-generics/asset";
+   @import "./03-generics/box-sizing";
+   @import "./03-generics/normalize.vendor";
+   @import "./03-generics/prefers-color-scheme";
+   @import "./03-generics/prefers-reduced-motion";
+
+   // elements
+
+   @import "./04-elements/form";
+   @import "./04-elements/list";
+   @import "./04-elements/sub-sup";
+   @import "./04-elements/typography";
+
+   //objects
+   //variables
+
+   @import "./07-variables/variables";
+   //utilies
+   
+   @import "./99-utilities/a11y";
+
+
+
+
+ 
+  
+  // ========================
+  // Layout
+  // ========================
+
+  @import "layout/l-header";
+  @import "layout/l-main";
+  @import "layout/l-footer";
+  @import "layout/l-container";
+  @import "layout/l-content";
+  @import "layout/l-aside";
+
+  // ========================
+  // base
+  // ========================
+
+
+  // ========================
+  // component
+  // ========================
+
+  @import "./component/c-filter";
+  @import "./component/c-card";
+  @import "./component/c-tags";
+  @import "./component/c-iconized-info";
+  @import "./component/c-icon";
+  @import "./component/c-buttom";
+
+  // ========================
+  // state
+  // ========================
+
+
+

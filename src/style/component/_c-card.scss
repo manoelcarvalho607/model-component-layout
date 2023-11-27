@@ -1,0 +1,99 @@
+$component-name: "c-card";
+
+
+.#{$component-name} {
+    background-color: #fff;
+    border-radius: $global-radius;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden; 
+    padding: $global-module-size;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: $global-module-size;
+      }
+
+    @include breakpoint(large-up) {
+        flex-direction: row;
+        height: 15.6rem; // 250px
+        justify-content: space-between;
+    }
+
+
+    
+
+    &__image {
+        align-items: center;
+        border-radius: 50%;
+        // max-width: 10rem; //160px
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__identification {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @include breakpoint(large-up) {
+            align-items: flex-start;
+            text-align: inherit;
+        }
+    }
+
+    .c-tags {
+        margin: 0;
+    }
+
+    &__name {
+        margin-bottom: 0;
+        line-height: 1;
+        font-size: 2rem;
+
+        @include breakpoint(large-up) {
+            margin-top: 0;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: $global-module-size;
+
+        @include breakpoint(small-up) {
+            flex-direction: row;
+            justify-content: center;
+        }
+        @include breakpoint(large-up) {
+            justify-content: flex-start;
+            margin-top: 0;
+        }
+    }
+
+    .c-iconized-info {
+        width: 100%;
+
+        @include breakpoint(small-up) {
+            width: inherit;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 0.93rem;
+
+            @include breakpoint(small-up) {
+                margin-bottom: inherit;
+                margin-right: $global-module-size;
+            }
+        }
+    }
+
+}

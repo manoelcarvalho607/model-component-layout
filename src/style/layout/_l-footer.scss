@@ -1,0 +1,30 @@
+$layout-name: 'l-footer';
+
+.#{$layout-name} {
+    background-color: var(--color-footer);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+
+    &__info {
+        @include breakpoint(large-up) {
+            height: 12.5rem;
+        }
+    }
+
+    &__copyright {
+        background-color: var(--color-footer-dark);
+        @include breakpoint(large-up) {
+            height: 4.68rem;
+        }
+    }
+
+    &__content {
+        @include breakpoint(large-up) {
+          max-width: $global-max-width;
+          margin: 0 auto;
+        }
+    }
+
+
+}
